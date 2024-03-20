@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: yellow;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: whitesmoke;
+    padding: 10px 0;
+}
+
+header h2 {
+    font-size: 2.2rem;
+    color: blueviolet;
+    text-transform: capitalize;
+}
+
+.container1,
+.container2,
+.container3 {
+    max-width: 550px;
+    margin: 20px auto;
+    border: 2px solid #222;
+    border-radius: 5px;
+    padding: 8px 8px;
+}
+
+.container1 .rak {
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    color: blueviolet;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 5px;
+}
+
+form button { 
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    background-color: wheat;
+}
+
+button:active {
+    background-color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container2 h2 {
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.remove{
+    background-color: blueviolet;
+    padding: 2px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.move {
+    background-color: orange;
+    padding: 2px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.inner {
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    border: 2px solid ;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+span {
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+
+
+

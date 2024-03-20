@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>book shelf</h2>
+        <p>Lets start read the window to the world</p>
+    </header>
+    <div class="container1" id="add-book">
+        <div class="rak">
+            Masukkan Daftar buku yang ingin kamu baca
+        </div>
+        <form id="form">
+            <div class="input">
+                <label for="judul">Judul</label>
+                <input type="text" id="judul" name="judul" required placeholder="Judul buku ">
+            </div>
+            <div class="input">
+                <label for="penulis">Penulis</label>
+                <input type="text" id="penulis" name="penulis" required placeholder="Penulis buku">
+            </div>
+            <div class="input">
+                <label for="jenis">Jenis buku </label>
+                <input type="text" id="jenis" name="jenis" required placeholder="Novel Komik atau Short story">
+            </div>
+            <div class="input">
+                <label for="date">Tahun rilis</label>
+                <input type="text" name="date" id="date" placeholder="Berupa angka" required>
+            </div>
+            <button type="submit">Masukkan buku Kedalam daftar <span>belum dibaca</span> </button>
+        </form>
+    </div>
+
+    <div class="container2">
+        <h2>Cari buku</h2>
+        <form >
+                <input type="text" id="search-input" placeholder="Cari buku anda"> 
+        </form>
+    </div>
+
+    <div class="container3">
+        <H4> Belum dibaca</H4>
+        <div class="list" id="Books"></div>
+    </div>
+
+    <div class="container3">
+        <H4>Sudah dibaca</H4>
+        <div class="list" id="Selesai"></div>
+    </div>
+
+    <script src="scriptbook.js"></script>
+</body>
+</html>
