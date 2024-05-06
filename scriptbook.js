@@ -10,14 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+const Book = [];
+const RENDER_EVENT = 'render-Book';
 function addBook() {
     const title = document.getElementById('judul').value;
     const author = document.getElementById('penulis').value;
     const genre = document.getElementById('jenis').value;
     const year = document.getElementById('date').value;
    
-    const generatedID = generateId();
+    const generatedID = +new Date();
     const bookObject = generateBookObject(generatedID, title, author, genre, parseInt(year), false);
     Book.push(bookObject);
    
@@ -25,11 +26,6 @@ function addBook() {
 
     saveData();
   }
-
-
-function generateId() {
-     return +new Date();
-}
 
 function generateBookObject(id, title, author, genre, year, isCompleted) {
     return {
@@ -41,14 +37,6 @@ function generateBookObject(id, title, author, genre, year, isCompleted) {
       isCompleted,
     }
   }
-
-const Book = [];
-const RENDER_EVENT = 'render-Book';
-
-
-document.addEventListener(RENDER_EVENT, function () {
-  console.log(Book);
-});
 
 
 function makeBook(bookObject) {
