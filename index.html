@@ -3,56 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Shelf</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h2>book shelf</h2>
-        <p>Let's start reading the windows of the world</p>
+        <p>Lets start read the window to the world</p>
     </header>
-    <div class="container1" id="add-book">
-        <div class="rak">
-            Masukkan Daftar buku yang ingin kamu baca
+    <main class="main-container">
+        <div class="container1" id="add-book">
+            <p class="title">Masukkan buku yang ingin kamu baca</p>
+            <form id="form">
+                <input type="hidden" id="book-id">
+                <div class="input">
+                    <label for="judul">Judul</label>
+                    <input type="text" id="judul" name="judul" required placeholder="Judul buku ">
+                </div>
+                <div class="input">
+                    <label for="penulis">Penulis</label>
+                    <input type="text" id="penulis" name="penulis" required placeholder="Penulis buku">
+                </div>
+                <div class="input">
+                    <label for="jenis">Jenis buku </label>
+                    <input type="text" id="jenis" name="jenis" required placeholder="Novel Komik atau Short story">
+                </div>
+                <div class="input">
+                    <label for="date">Tahun rilis</label>
+                    <input type="number" name="date" id="date" placeholder="Berupa angka" required>
+                </div>
+                <button type="submit" id="submit-button">Masukkan buku Kedalam daftar <span>belum dibaca</span></button>
+                <button type="button" id="update-button" style="display:none;">Update Buku</button>
+            </form>
         </div>
-        <form id="form">
-            <div class="input">
-                <label for="judul">Judul</label>
-                <input type="text" id="judul" name="judul" required placeholder="Judul buku ">
-            </div>
-            <div class="input">
-                <label for="penulis">Penulis</label>
-                <input type="text" id="penulis" name="penulis" required placeholder="Penulis buku">
-            </div>
-            <div class="input">
-                <label for="jenis">Jenis buku </label>
-                <input type="text" id="jenis" name="jenis" required placeholder="Novel Komik atau Short story">
-            </div>
-            <div class="input">
-                <label for="date">Tahun rilis</label>
-                <input type="number" name="date" id="date" placeholder="Berupa angka" required>
-            </div>
-            <button type="submit">Masukkan buku Kedalam daftar <span>belum dibaca</span> </button>
-        </form>
-    </div>
 
-    <div class="container2">
-        <h2>Cari buku</h2>
-        <form >
-                <input type="text" id="search-input" placeholder="Cari buku anda"> 
-        </form>
-    </div>
-
-    <div class="container3">
-        <H4> Belum dibaca</H4>
-        <div class="list" id="Books"></div>
-    </div>
-
-    <div class="container3">
-        <H4>Sudah dibaca</H4>
-        <div class="list" id="Selesai"></div>
-    </div>
-
+        <section class="center">
+            <div class="container2">
+                <h2>Cari buku</h2>
+                <form >
+                        <input type="text" id="search-input" placeholder="Maukkan judul buku"> 
+                </form>
+            </div>
+            <div class="book-center">
+                <div class="container3">
+                    <H4> Belum dibaca</H4>
+                    <div class="list" id="Books"></div>
+                </div>
+                <div class="container3">
+                    <H4>Sudah dibaca</H4>
+                    <div class="list" id="Selesai"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="scriptbook.js"></script>
 </body>
 </html>
