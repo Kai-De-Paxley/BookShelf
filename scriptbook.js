@@ -33,7 +33,7 @@ function addBook() {
    
     //Setelah disimpan pada array, kita panggil sebuah custom event RENDER_EVENT menggunakan method dispatchEvent(). Custom event ini akan kita terapkan untuk me-render data yang telah disimpan pada array todos.
     document.dispatchEvent(new Event(RENDER_EVENT));
-
+    reset()
     saveData();
   }
 
